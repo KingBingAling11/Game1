@@ -54,3 +54,16 @@ canvas {
   border: 5px solid #fff;       /* White border */
   border-radius: 15px;          /* Rounded corners */
   box-shadow: 0 0 30
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My JS Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">Score: 0 | Lives: 3</div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>

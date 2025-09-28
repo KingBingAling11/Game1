@@ -10,4 +10,19 @@ body {
 canvas {
   border: 3px solid white;
   background-color: black;
+}/* Make the body full screen and center canvas */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Gradient background */
+  font-family: 'Arial', sans-serif;
 }
+
+/* Style the game canvas */
+canvas {
+  border: 5px solid #fff;       /* White border */
+  border-radius: 15px;          /* Rounded corners */
+  box-shadow: 0 0 30

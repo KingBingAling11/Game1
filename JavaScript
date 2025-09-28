@@ -1,0 +1,39 @@
+// Get canvas and context
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
+
+// Player object
+let player = {
+  x: 100,
+  y: 100,
+  size: 50,
+  speed: 5
+};
+
+// Game loop
+function gameLoop() {
+  update();
+  draw();
+  requestAnimationFrame(gameLoop);
+}
+
+// Update game state
+function update() {
+  // Temporary: move player automatically
+  player.x += 1;
+  if (player.x > canvas.width) {
+    player.x = -player.size; // loop around
+  }
+}
+
+// Draw everything
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height); // clear screen
+
+  // Draw player square
+  ctx.fillStyle = "lime";
+  ctx.fillRect(player.x, player.y, player.size, player.size);
+}
+
+// Start the game loop
+gameLoop();
